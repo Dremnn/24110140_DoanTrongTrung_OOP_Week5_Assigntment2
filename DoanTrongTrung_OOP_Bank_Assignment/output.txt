@@ -1,0 +1,272 @@
+=== Bank Account Management System ===
+Testing Object-Oriented Programming Concepts with Operations Class
+
+1. Creating Customers using Operations class...
+Customer created: Alice Johnson (ID: 1)
+Customer created: Bob Smith (ID: 2)
+Customer created: Charlie Brown (ID: 3)
+
+2. Creating Accounts using Operations class...
+Regular account created for Alice Johnson (Account #1)
+Savings account created for Alice Johnson (Account #2)
+Regular account created for Bob Smith (Account #3)
+Business account created for Bob Smith (Account #4)
+Savings account created for Charlie Brown (Account #5)
+
+3. Assigning Accounts to Customers...
+Account 1 added to customer Alice Johnson
+Account 1 assigned to customer Alice Johnson
+Account 2 added to customer Alice Johnson
+Account 2 assigned to customer Alice Johnson
+Account 3 added to customer Bob Smith
+Account 3 assigned to customer Bob Smith
+Account 4 added to customer Bob Smith
+Account 4 assigned to customer Bob Smith
+Account 5 added to customer Charlie Brown
+Account 5 assigned to customer Charlie Brown
+
+4. Performing Banking Operations...
+Deposited $200.00 to account 1
+Withdrew $150.00 from account 1
+Deposited $1000.00 to account 2
+
+5. Testing Transfer Operations...
+Withdrew $100.00 from account 1
+Deposited $100.00 to account 3
+Transfer successful: $100.00 from account 1 to account 3
+
+6. Applying Interest to All Savings Accounts...
+
+--- Applying Interest to All Savings Accounts ---
+Applied monthly interest: $12.50 to savings account 2
+Applied monthly interest: $7.50 to savings account 5
+Interest applied to 2 savings accounts.
+
+Testing Business Account Withdrawals...
+
+Testing withdrawal within balance:
+Withdrawal successful. New balance: $3990.00
+
+Testing withdrawal exceeding balance but within credit limit:
+Withdrawal successful. New balance: $-520.00
+
+Testing withdrawal exceeding credit limit:
+Error: Exceeds credit limit!
+Withdrawal failed. Balance remains: $-520.00
+
+Business Account Info after withdrawals:
+
+--- Account Information ---
+Account Number: 4
+Owner: Bob Smith
+Balance: $-520.00
+Transaction History:
+  Transaction: Business Withdrawal - $1000.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Transaction Fee - $10.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Business Withdrawal - $4500.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Transaction Fee - $10.00 on Wed Sep 17 07:55:54 2025
+Account Type: Business Account
+Transaction Fee: $10.00
+Credit Limit: $1000.00
+
+7. Testing Operator Overloading...
+Adding transaction using += operator:
+Deposited $100.00 to account 1
+
+Comparing account balances using == operator:
+Alice's checking and Bob's checking have different balances
+Comparing account balances using > operator:
+Alice's savings account has more money than her checking account
+
+Testing Recurring Transactions...
+Displaying recurring transactions:
+Transaction: Subscription - $15.99 on Wed Sep 17 07:55:54 2025
+Recurring every 30 days.
+Transaction: Gym Membership - $45.00 on Wed Sep 17 07:55:54 2025
+Recurring every 30 days.
+
+Adding recurring transactions to Alice's checking account:
+Withdrew $15.99 from account 1
+Withdrew $45.00 from account 1
+Updated info for Alice's checking account:
+
+--- Account Information ---
+Account Number: 1
+Owner: Alice Johnson
+Balance: $989.01
+Transaction History:
+  Transaction: Deposit - $200.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Withdrawal - $150.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Withdrawal - $100.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Deposit - $100.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Withdrawal - $15.99 on Wed Sep 17 07:55:54 2025
+  Transaction: Withdrawal - $45.00 on Wed Sep 17 07:55:54 2025
+
+8. Testing Error Handling...
+Attempting invalid operations:
+Error: Account 9999 not found!
+Error: Insufficient funds! Balance: $850.00
+Error: One or both accounts not found!
+
+9. Displaying System Information...
+
+=== BANKING SYSTEM SUMMARY ===
+Total Customers: 3
+Total Accounts: 5
+Regular Accounts: 3
+Savings Accounts: 2
+Total System Balance: $10339.01
+
+=== SYSTEM STATISTICS ===
+Average Account Balance: $2067.80
+Highest Balance: $6012.50 (Account #2)
+Lowest Balance: $-520.00
+
+10. Performing Monthly Operations...
+
+--- Performing Monthly Operations ---
+
+--- Applying Interest to All Savings Accounts ---
+Applied monthly interest: $12.53 to savings account 2
+Applied monthly interest: $7.52 to savings account 5
+Interest applied to 2 savings accounts.
+Monthly operations completed.
+
+11. Displaying All Customers...
+
+=== ALL CUSTOMERS ===
+
+=== Customer Information ===
+Customer ID: 1
+Name: Alice Johnson
+Total Accounts: 2
+Total Balance: $7014.04
+
+Account Details:
+Account 1 (Alice Johnson): $989.01
+Account 2 (Alice Johnson): $6025.03
+--------------------------------------------------
+
+=== Customer Information ===
+Customer ID: 2
+Name: Bob Smith
+Total Accounts: 2
+Total Balance: $330.00
+
+Account Details:
+Account 3 (Bob Smith): $850.00
+Account 4 (Bob Smith): $-520.00
+--------------------------------------------------
+
+=== Customer Information ===
+Customer ID: 3
+Name: Charlie Brown
+Total Accounts: 1
+Total Balance: $3015.02
+
+Account Details:
+Account 5 (Charlie Brown): $3015.02
+--------------------------------------------------
+
+12. Displaying All Accounts...
+
+=== ALL ACCOUNTS ===
+
+--- Account Information ---
+Account Number: 1
+Owner: Alice Johnson
+Balance: $989.01
+Transaction History:
+  Transaction: Deposit - $200.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Withdrawal - $150.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Withdrawal - $100.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Deposit - $100.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Withdrawal - $15.99 on Wed Sep 17 07:55:54 2025
+  Transaction: Withdrawal - $45.00 on Wed Sep 17 07:55:54 2025
+----------------------------------------
+
+--- Account Information ---
+Account Number: 2
+Owner: Alice Johnson
+Balance: $6025.03
+Transaction History:
+  Transaction: Deposit - $1000.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Interest - $12.50 on Wed Sep 17 07:55:54 2025
+  Transaction: Interest - $12.53 on Wed Sep 17 07:55:54 2025
+Account Type: Savings Account
+Interest Rate: 2.50% annually
+Withdrawal Limit: $500.00
+Withdrawals This Month: 0/6
+----------------------------------------
+
+--- Account Information ---
+Account Number: 3
+Owner: Bob Smith
+Balance: $850.00
+Transaction History:
+  Transaction: Deposit - $100.00 on Wed Sep 17 07:55:54 2025
+----------------------------------------
+
+--- Account Information ---
+Account Number: 4
+Owner: Bob Smith
+Balance: $-520.00
+Transaction History:
+  Transaction: Business Withdrawal - $1000.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Transaction Fee - $10.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Business Withdrawal - $4500.00 on Wed Sep 17 07:55:54 2025
+  Transaction: Transaction Fee - $10.00 on Wed Sep 17 07:55:54 2025
+Account Type: Business Account
+Transaction Fee: $10.00
+Credit Limit: $1000.00
+----------------------------------------
+
+--- Account Information ---
+Account Number: 5
+Owner: Charlie Brown
+Balance: $3015.02
+Transaction History:
+  Transaction: Interest - $7.50 on Wed Sep 17 07:55:54 2025
+  Transaction: Interest - $7.52 on Wed Sep 17 07:55:54 2025
+Account Type: Savings Account
+Interest Rate: 3.00% annually
+Withdrawal Limit: $300.00
+Withdrawals This Month: 0/6
+----------------------------------------
+
+13. Testing Search Functionality...
+Found customer: Alice Johnson
+Found account: Account 1 (Alice Johnson): $989.01
+
+14. Demonstrating Polymorphism...
+Adding small bonus to all accounts (polymorphic behavior):
+Before bonus: Account 1 (Alice Johnson): $989.01
+Deposited $25.00 to account 1
+After bonus: Account 1 (Alice Johnson): $1014.01
+---
+Before bonus: Account 2 (Alice Johnson): $6025.03
+Deposited $25.00 to account 2
+After bonus: Account 2 (Alice Johnson): $6050.03
+---
+Before bonus: Account 3 (Bob Smith): $850.00
+Deposited $25.00 to account 3
+After bonus: Account 3 (Bob Smith): $875.00
+---
+Before bonus: Account 5 (Charlie Brown): $3015.02
+Deposited $25.00 to account 5
+After bonus: Account 5 (Charlie Brown): $3040.02
+---
+
+15. Final System Summary...
+
+=== BANKING SYSTEM SUMMARY ===
+Total Customers: 3
+Total Accounts: 5
+Regular Accounts: 3
+Savings Accounts: 2
+Total System Balance: $10459.05
+
+=== SYSTEM STATISTICS ===
+Average Account Balance: $2091.81
+Highest Balance: $6050.03 (Account #2)
+Lowest Balance: $-520.00
